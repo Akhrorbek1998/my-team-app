@@ -54,6 +54,44 @@
         </div>
       </div>
     </header>
+    <aside class="sidebar">
+      <button class="close-btn">
+        <img
+          class="close-btn__icon"
+          src="./images/close.svg"
+          alt="close icon"
+          width="18"
+          height="17"
+        />
+      </button>
+      <nav class="sidebar-nav">
+        <ul class="sidebar-nav__list">
+          <li class="sidebar-nav__item">
+            <a class="sidebar-nav__link nav__link" href="index.html">home</a>
+          </li>
+          <li class="sidebar-nav__item">
+            <a class="sidebar-nav__link nav__link" href="about.html">about</a>
+          </li>
+        </ul>
+        <a class="outline-bnt" href="contact.html">contact us</a>
+      </nav>
+    </aside>
     <!-- HEADER FINISH -->
+
+    <script>
+      var elBarsBtn = document.querySelector(".bars-btn");
+      var elSidebar = document.querySelector(".sidebar");
+
+      elBarsBtn.addEventListener("click", () => {
+        elSidebar.classList.add("active");
+      });
+
+      var elCloseBtn = document.querySelector(".close-btn");
+      console.log(elCloseBtn);
+
+      elCloseBtn.addEventListener("click", () => {
+        elSidebar.classList.remove("active");
+      });
+    </script>
   </body>
 </html>

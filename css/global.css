@@ -155,3 +155,42 @@ img {
     margin-left: auto;
   }
 }
+
+/* ======================= SIDEBAR ========================== */
+.sidebar {
+  width: 255px;
+  position: fixed;
+  top: 0;
+  right: -255px;
+  bottom: 0;
+  background-color: var(--police-blue);
+  padding-top: 56px;
+  padding-right: 25px;
+  padding-left: 48px;
+  transition: all 0.4s ease;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.close-btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 39px;
+}
+
+.sidebar-nav__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.sidebar-nav > .outline-bnt {
+  display: inline-block;
+}
