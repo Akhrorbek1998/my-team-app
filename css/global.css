@@ -146,6 +146,11 @@ img {
     padding-left: 24px;
     padding-right: 24px;
   }
+
+  .header {
+    padding-bottom: 80px;
+  }
+
   .nav {
     display: none;
   }
